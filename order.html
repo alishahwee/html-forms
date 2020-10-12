@@ -32,25 +32,51 @@
       </tr>
     </table>
 
-    Order Form
+    <h2>Order Form</h2>
 
-    Your name
+    <form>
+      <div>
+        Your name
+        <input type="text" name="name">
+      </div>
 
-    Who are we sending this to?
+      <div>
+        Who are we sending this to?
+        <input type="text" name="recipient">
+      </div>
 
-    Choose a melon
-    Watermleon
-    Canteloupe
-    Honeydew
+      <div>
+        Choose a melon
+        <select name="melon">
+          <option value="watermelon">Watermelon</option>
+          <option value="cantaloupe">Cantaloupe</option>
+          <option value="honeydew">Honeydew</option>
+        </select>
+      </div>
 
-    When should we deliver?
-    Morning
-    Evening
-    Any time
+      <div>
+        When should we deliver?
+        <input type="radio" name="time" value="am">Morning
+        <input type="radio" name="time" value="pm">Evening
+        <input type="radio" name="time" value="any">Any time
+      </div>
 
-    Enter your message:
+      <div>
+        Enter your message:
+      </div>
+      <div>
+        <textarea name="message"></textarea>
+      </div>
+        
+      <div>
+        Subscribe to our newsletter
+        <input type="checkbox" name="subscribe" value="yes">Yes
+      </div>
 
-    Subscribe to our newsletter
-    Yes
+      <div>
+        <input type="submit">
+      </div>
+
+    </form>
   </body>
 </html>
